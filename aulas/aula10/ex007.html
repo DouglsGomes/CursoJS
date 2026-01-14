@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+
+        }
+        h1{
+            width: 200px;
+            font-size: 1.6em;
+            margin-left: 160px;
+            line-height: 20px;
+        }
+        div#janela{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+        input#text1{
+            padding: 10px;
+            margin: 15px;
+        }
+        input#text2{
+            padding: 10px;
+            margin: 15px;
+        }
+        input{
+            font-size: 2em;
+        }
+        input#but{
+            font-size: 1.5em;
+            margin-left: 170px;
+        }
+        div#res{
+            font-size: 2em;
+            margin-top: 30px;
+            margin-left: 147px;
+            padding: 6px;
+            background-color: rgba(128, 128, 128, 0.308);
+            color: black;
+            width: 120px;
+            border: 2px solid black
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="janela">
+        <h1>Somando Valores</h1>
+        <input type="number" name="text1" id="text1">
+        <input type="number" name="text2" id="text2">
+        <input type="button" value="Somar" onclick="somar()" id="but">
+        <div id="res">resultado </div>
+    </div>
+
+    <script>
+        var a= window.document.getElementById('text1')
+        var b= window.document.getElementById('text2')
+        var res = window.document.getElementById('res')
+        function somar(){
+            var n1 = Number.parseInt(a.value)
+            var n2 = Number.parseInt(b.value)
+            var s = (n1+n2)
+            res.innerHTML = s
+        }
+
+    </script>
+</body>
+</html>
