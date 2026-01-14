@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aeroporto</h1>
+
+    Digite de qual país você é: <input type="text" name="pais" id="Dpais">
+    <input type="button" value="Verificar" onclick="check()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function check(){
+
+            var country = document.getElementById('Dpais').value
+            if (country=="Brasil"){
+                res.innerHTML=`Você é do ${country}`
+                res.innerHTML=`Então você é Brasileiro`
+            }else{
+                res.innerHTML='Voce não é do Brasil, então você estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
