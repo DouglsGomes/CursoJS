@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="txtano">Ano de Nascimento: </label>
+                <input type="number" name="txtano" id="txtano"> 
+            </p>
+            <p>
+                Sexo: <input type="radio" name="allsex"id="sexm" checked>
+                <label for="sexm">Masculino</label>
+                <input type="radio" name="allsex"id="sexf">
+                <label for="sexf">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="carregar()">
+                
+        </div>
+
+        <div id="res">
+            Preencha os dados acima
+        </div>
+    </section>
+    <footer>
+        <p>@Douuglas11</p>
+    </footer>
+    <script src="cod.js"></script>
+</body>
+</html>
