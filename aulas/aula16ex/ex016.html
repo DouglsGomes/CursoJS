@@ -12,27 +12,23 @@
         <section>
             <div>
                 <p>
-                    <label for="num1">Início</label>
+                    <label for="num1"> Número (entre 1 e 100): </label>
                     <input type="number" name="n1" id="num1">
+                    <input type="button" value="Adicionar" onclick="adicionar()">
+                    <br> <select name="list" id="flist" size="6"></select>
+                    <br><input type="button" value="Finalizar" onclick="finalizar()">
                 </p>
-                <p>
-                    <label for="num2">Fim: </label>
-                    <input type="number" name="n2" id="num2">
-                </p>
-                <p>
-                    <label for="passo">Passo: </label>
-                    <input type="number" name="passo" id="passo">
-                </p>
-                <input type="button" value="Verificar" onclick="contar()">
+              
+              
             </div>
-
+                
             <div id="res">
-                <p>Preencha os valores acima</p>
+                
             </div>
 
         </section>
 
-    <footer>@douuglas11</footer>
+    <footer><p>@douuglas11</p></footer>
 
     <script src="script.js"></script>
 </body>
